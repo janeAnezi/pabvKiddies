@@ -31,10 +31,15 @@ const App = () => {
         <div className="max-w-lg">
             <Carousel>
                 {slides.map((slide)=> (
-                    <div style={{backgroundImage: `url(${slide.image})`, backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                    width: '100%',
-                    height: '421px',}} key={slide.id}>
+                    <div 
+                       style={{
+                        backgroundImage: `url(${slide.image})`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                        width: '100%',
+                        height: '421px'
+                      }}
+                       key={slide.id}>
                     
                         <div className="w-full h-full bg-black/70 flex flex-col items-center justify-center text-white">
                             <h2>{slide.title}</h2>

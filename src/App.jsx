@@ -9,19 +9,19 @@ const slides = [
         id: '1',
         image: hero1,
         title: "Hero 1",
-        description: "This is the first hero"
+        description: "This is the first slide"
     },
     {
         id: '2',
         image: hero2,
         title: "Hero 2",
-        description: "This is the first hero"
+        description: "This is the second slide"
     },
     {
         id: '3',
         image: hero3,
         title: "Hero 3",
-        description: "This is the first hero"
+        description: "This is the third slide "
     },
 ]
 
@@ -34,7 +34,7 @@ const App = () => {
                     <div style={{backgroundImage: `url(${slide.image})`, backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     width: '100%',
-                    height: '300px',}} key={slide.id}>
+                    height: '421px',}} key={slide.id}>
                     
                         <div className="w-full h-full bg-black/70 flex flex-col items-center justify-center text-white">
                             <h2>{slide.title}</h2>

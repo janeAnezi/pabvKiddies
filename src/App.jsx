@@ -31,9 +31,16 @@ const App = () => {
         <div className="max-w-lg">
             <Carousel>
                 {slides.map((slide)=> (
-                    <div style={{backgroundImage: `url(${slide.image})`}} key={slide.id}>
-                        <h2>{slide.title}</h2>
-                        <p>{slide.description}</p> 
+                    <div style={{backgroundImage: `url(${slide.image})`, backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    width: '100%',
+                    height: '300px',}} key={slide.id}>
+                    
+                        <div className="w-full h-full bg-black/70 flex flex-col items-center justify-center text-white">
+                            <h2>{slide.title}</h2>
+                            <p>{slide.description}</p> 
+                        </div>
+                        
                     </div>
                 ))}
             </Carousel>

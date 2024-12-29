@@ -2,8 +2,8 @@ import React from 'react'
 
 const Carousel = ({children: slides}) => {
   return (
-    <div className='overflow-hidden relative'>
-      <div className=''>{slides}</div>
+    <div className='w-screen overflow-hidden relative'>
+      <div className='flex'>{slides}</div>
     </div>
   )
 }

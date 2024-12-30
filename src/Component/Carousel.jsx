@@ -34,6 +34,15 @@ const Carousel = ({ children: slides }) => {
           <IoIosArrowForward size={30} />
         </button>
       </div>
+
+      <div className="abslute bottom-4 right-0 left-0">
+        <div className="flex justify-center items-center gap-2">
+            {slides.map((_, i) => (
+                <div className={`transition-all w-3 h-3 rounded-full bg-slate-400 ${currSlide === i? 'p-1' : 'bg-opacity-50'}`}>
+                </div>
+            ))}
+        </div>
+      </div>
     </div>
   );
 };

@@ -19,7 +19,7 @@ const Carousel = ({ children: slides, autoSlide = false, autoSlideInterval = 300
   }, [])
 
   return (
-    <div className="w-screen overflow-hidden relative">
+    <div className="w-screen overflow-hidden relative group">
       <div
         className="flex transition-transform ease-out duration-700"
         style={{
@@ -33,10 +33,10 @@ const Carousel = ({ children: slides, autoSlide = false, autoSlideInterval = 300
         ))}
       </div>
       <div className="absolute inset-0 flex items-center justify-between text-slate-500 p-4">
-        <button onClick={prev}>
+        <button onClick={prev} className="hidden group-hover:block" >
           <IoIosArrowBack size={30} />
         </button>
-        <button onClick={next}>
+        <button onClick={next} className="hidden group-hover:block">
           <IoIosArrowForward size={30} />
         </button>
       </div>

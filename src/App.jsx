@@ -29,7 +29,7 @@ const App = () => {
   return (
     <main className=" ">
         <div className="max-w-lg">
-            <Carousel>
+            <Carousel autoSlide={true}>
                 {slides.map((slide)=> (
                     <div 
                        style={{

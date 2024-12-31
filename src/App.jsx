@@ -1,57 +1,32 @@
-import Carousel from "./Component/Carousel"
-import hero1 from './assets/img/hero01.jpeg'
-import hero2 from './assets/img/hero02.jpeg'
-import hero3 from './assets/img/hero03.jpeg'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import LayOut from './Component/LayOut';
+import Home from './Component/Home';
+import Products from './Component/Products';
+import Services from './Component/Services';
+import LogIn from './Component/LogIn';
+import Register from './Component/Register';
+import About from './Component/About';
+import Contact from './Component/Contact';
 
-
-const slides = [
-    {
-        id: '1',
-        image: hero1,
-        title: "Hero 1",
-        description: "This is the first slide"
-    },
-    {
-        id: '2',
-        image: hero2,
-        title: "Hero 2",
-        description: "This is the second slide"
-    },
-    {
-        id: '3',
-        image: hero3,
-        title: "Hero 3",
-        description: "This is the third slide "
-    },
-]
+import './App.css'
 
 const App = () => {
   return (
-    <main className=" ">
-        <div className="max-w-lg">
-            <Carousel autoSlide={true}>
-                {slides.map((slide)=> (
-                    <div 
-                       style={{
-                        backgroundImage: `url(${slide.image})`,
-                        backgroundSize: 'cover',
-                        backgroundPosition: 'center',
-                        width: '100%',
-                        height: '421px'
-                      }}
-                       key={slide.id}>
-                    
-                        <div className="w-full h-full bg-black/70 flex flex-col items-center justify-center text-white">
-                            <h2>{slide.title}</h2>
-                            <p>{slide.description}</p> 
-                        </div>
-                        
-                    </div>
-                ))}
-            </Carousel>
-        </div>
-    </main>
-  )
-}
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<LayOut />}>
+          <Route index element={<Home />} />
+          <Route path="products" element={<Products />} />
+          <Route path="services" element={<Services />} />
+          <Route path="about" element={<About />} />
+          <Route path="contact" element={<Contact />} />
+        </Route>
 
-export default App
+        <Route path="/login" element={<LogIn />} />
+        <Route path="/register" element={<Register />} />
+      </Routes>
+    </BrowserRouter>
+  );
+};
+
+export default App;

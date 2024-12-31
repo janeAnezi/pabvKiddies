@@ -4,7 +4,7 @@ import { IoPulseSharp } from 'react-icons/io5';
 import { FaBarsStaggered } from 'react-icons/fa6';
 import { AiOutlineClose } from 'react-icons/ai';
 
-const NavBar = () => {
+const Nav = () => {
   const [isNavOpen, setIsNavOpen] = useState(false); 
 
   const toggleNavHandler = () => {
@@ -38,7 +38,7 @@ const NavBar = () => {
           <li><Link to="/products" onClick={closeNavHandler}>PRODUCTS</Link></li>
           <li><Link to="/services" onClick={closeNavHandler}>SERVICES</Link></li>
           <li><Link to="/about" onClick={closeNavHandler}>ABOUT</Link></li>
-          <li><Link to="/freetips" onClick={closeNavHandler}>CONTACT</Link></li>
+          <li><Link to="/contact" onClick={closeNavHandler}>CONTACT</Link></li>
         </ul>
         <button className="bg-yellow-900 text-white px-2 py-1 text-xs rounded-md hover:bg-yellow-800 transition hidden md:block">
           <Link to="/register" onClick={closeNavHandler}>MORE</Link>
@@ -48,4 +48,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default Nav;

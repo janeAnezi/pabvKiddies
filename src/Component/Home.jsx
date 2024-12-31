@@ -1,34 +1,10 @@
 import Carousel from "../Component/Carousel"
-import hero1 from '../assets/img/hero02.jpeg'
-import hero2 from '../assets/img/kid01.jpeg'
-import hero3 from '../assets/img/hero03.jpeg'
+import { slides } from "./content"
 
-
-const slides = [
-    {
-        id: '1',
-        image: hero1,
-        title: "Hero 1",
-        description: "This is the first slide"
-    },
-    {
-        id: '2',
-        image: hero2,
-        title: "Hero 2",
-        description: "This is the second slide"
-    },
-    {
-        id: '3',
-        image: hero3,
-        title: "Hero 3",
-        description: "This is the third slide "
-    },
-]
 
 const Home = () => {
   return (
-    <main>
-        
+    <main className="bg-slate-400"> 
         <div className="max-w-lg">
             <Carousel autoSlide={true}>
                 {slides.map((slide)=> (
@@ -50,6 +26,20 @@ const Home = () => {
                     </div>
                 ))}
             </Carousel>
+        </div>
+
+        {/* ###### */}
+        <div className="h-screen pt-20">
+            <h2 className="text-center text-2xl text-orange-300">OUR PRODUCTS</h2>
+            <div class="grid grid-cols-3 gap-4 text-center mt-10">
+                <div class="..."><img src={hero2} alt="" /></div>
+                <div class="..."><img src={hero2} alt="" /></div>
+                <div class="..."><img src={hero2} alt="" /></div>
+                <div class="col-span-2 ..."><img src={hero2} alt="" /></div>
+                <div class="..."><img src={hero2} alt="" /></div>
+                <div class="..."><img src={hero2} alt="" /></div>
+                <div class="col-span-2 ..."><img src={hero2} alt="" /></div>
+            </div>
         </div>
     </main>
   )

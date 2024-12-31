@@ -16,11 +16,11 @@ const Nav = () => {
   };
 
   return (
-    <nav className="text-slate-400 w-screen h-14 grid place-items-center fixed top-0 left-0 z-20 border-b-4 backdrop-blur-sm">
+    <nav className="text-slate-50 w-screen h-14 grid place-items-center fixed top-0 left-0 z-20 border-b-4 backdrop-blur-sm">
       <div className="container mx-auto flex justify-between items-center h-full px-4">
         <Link to="/" className="block w-[100px]" onClick={closeNavHandler}>
-            <p className='text-xs text-slate-500 flex items-center'>  
-              PABV <IoPulseSharp className="text-2xl text-yellow-900" /> <span className='text-lime-500 ml-1'>kid</span>IES
+            <p className='text-xs text-slate-50 flex items-center'>  
+              PABV <IoPulseSharp className="text-2xl text-orange-300" /> <span className='text-lime-500 ml-1'>kid</span>IES
             </p>
         </Link>
         <button
@@ -40,7 +40,7 @@ const Nav = () => {
           <li><Link to="/about" onClick={closeNavHandler}>ABOUT</Link></li>
           <li><Link to="/contact" onClick={closeNavHandler}>CONTACT</Link></li>
         </ul>
-        <button className="bg-yellow-900 text-white px-2 py-1 text-xs rounded-md hover:bg-yellow-800 transition hidden md:block">
+        <button className="bg-orange-300 text-orange-900 px-2 py-1 text-xs font-bold rounded-md hover:bg-yellow-800 transition hidden md:block">
           <Link to="/register" onClick={closeNavHandler}>MORE</Link>
         </button>
       </div>

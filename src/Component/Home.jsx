@@ -34,14 +34,14 @@ const Home = () => {
             <div className="grid grid-cols-3 gap-4 text-center mt-10">
             {products.slice(0, 6).map((product) => (
                 <div key={product.id} className="border p-4 rounded-lg shadow-lg">
-                <img src={product.image} alt={product.name} className="w-full h-40 object-cover rounded-lg" />
+                <img src={product.image} alt={product.name} className="w-full h-60 object-cover rounded-lg" />
                 <h3 className="text-lg font-semibold mt-4">{product.name}</h3>
                 <p className="text-gray-600">${product.price}</p>
                 </div>
             ))}
             </div>
-            <div className="text-center mt-10">
-            <Link to="/products" className="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-700">
+            <div className="text-right mr-20 mt-10">
+            <Link to="/products" className="bg-orange-500 text-white text-xs px-2 py-1 rounded hover:bg-orange-700">
                 View More
             </Link>
             </div>

@@ -21,11 +21,14 @@ const ProductDetail = () => {
 
   return (
     <main className="bg-white">
-      <div className="max-w-3xl mx-auto py-10">
-        <img src={product.image} alt={product.name} className="w-full h-64 object-cover rounded-lg" />
-        <h2 className="text-2xl font-semibold mt-6">{product.name}</h2>
-        <p className="text-gray-600 mt-4">${product.price}</p>
-        <p className="text-gray-500 mt-2">{product.description}</p>
+      <div className="max-w-3xl mx-auto py-20 flex">
+        <div>
+            <img src={product.image} alt={product.name} className="w-full h-64 object-cover rounded-lg" />
+            <h2 className="text-2xl font-semibold mt-6">{product.name}</h2>
+            <p className="text-gray-600 mt-4">${product.price}</p>
+            <p className="text-gray-500 mt-2">{product.description}</p>
+        </div>
+        
         <div className="flex gap-4 mt-6">
           <button
             onClick={handleAddToCart}

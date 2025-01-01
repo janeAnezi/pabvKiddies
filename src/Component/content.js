@@ -39,6 +39,7 @@ export const slides = [
     },
 ];
 
+// ############## PRODUCTS
 export const products = [
     {
         id: '1',
@@ -152,5 +153,36 @@ export const products = [
         image: kid15,
         description: 'This is the ## product'
     },   
-]
+];
 
+// ######## SERVICES
+const services = [
+    {
+      id: 1,
+      title: 'Custom Kids Fashion',
+      description:
+        'We design and create bespoke fashion wears tailored to fit your kids perfectly, combining comfort and style.',
+      image: '../assets/img/kids-fashion.jpg', 
+    },
+    {
+      id: 2,
+      title: 'Tailoring Materials',
+      description:
+        'Shop high-quality tailoring materials to create your own unique designs with ease and precision.',
+      image: '../assets/img/tailoring-materials.jpg', 
+    },
+    {
+      id: 3,
+      title: 'Fashion Styling',
+      description:
+        'Discover the latest trends in kids’ fashion and let our expert stylists bring out the best looks for your little ones.',
+      image: '../assets/img/fashion-styling.jpg',
+    },
+    {
+      id: 4,
+      title: 'Creative Fashion Inspiration',
+      description:
+        'Explore a collection of innovative fashion ideas and get inspired by the best kids’ styles in the industry.',
+      image: '../assets/img/fashion-inspiration.jpg', 
+    },
+  ];

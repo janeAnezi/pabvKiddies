@@ -7,6 +7,7 @@ import LogIn from './Component/LogIn';
 import Register from './Component/Register';
 import About from './Component/About';
 import Contact from './Component/Contact';
+import ProductDetail from './Component/ProductDetail';
 
 import './App.css'
 

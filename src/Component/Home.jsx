@@ -1,5 +1,6 @@
 import { slides, products } from "./content";
 import Carousel from "../Component/Carousel";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (

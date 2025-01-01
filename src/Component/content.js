@@ -1,6 +1,22 @@
 import hero1 from '../assets/img/hero02.jpeg'
 import hero2 from '../assets/img/kid01.jpeg'
 import hero3 from '../assets/img/hero03.jpeg'
+import kid1 from '../assets/img/kid001.png'
+import kid2 from '../assets/img/kid002.png'
+import kid3 from '../assets/img/kid003.png'
+import kid4 from '../assets/img/kid004.png'
+import kid5 from '../assets/img/kid005.png'
+import kid6 from '../assets/img/kid006.png'
+import kid7 from '../assets/img/kid007.png'
+import kid8 from '../assets/img/kid008.png'
+import kid9 from '../assets/img/kid009.png'
+import kid10 from '../assets/img/kid0001.png'
+import kid11 from '../assets/img/kid0002.png'
+import kid12 from '../assets/img/kid01.jpeg'
+import kid13 from '../assets/img/kid02.png'
+import kid14 from '../assets/img/kid03.png'
+import kid15 from '../assets/img/kid03.png'
+import kid16 from '../assets/img/kid04.png'
 
 export const slides = [
     {
@@ -28,106 +44,113 @@ export const products = [
         id: '1',
         name: 'Product 1',
         price: 10.99,
-        image: '../assets/img/kid001.png',
+        image: kid1,
         description: 'This is the first product'
     },
     {
         id: '2',
         name: 'Product 2',
         price: 10.99,
-        image: '../assets/img/kid0001.png',
+        image: kid2,
         description: 'This is the second product'
     },
     {
         id: '3',
         name: 'Product 3',
         price: 10.99,
-        image: '../assets/img/kid0002.png',
+        image: kid3,
         description: 'This is the third product'
     },
     {
         id: '4',
         name: 'Product 4',
         price: 10.99,
-        image: '../assets/img/kid003.png',
+        image: kid16,
         description: 'This is the fourth product'
     },
     {
         id: '5',
         name: 'Product 5',
         price: 10.99,
-        image: '../assets/img/kid004.png',
+        image: kid4,
         description: 'This is the ##product'
     },
     {
-        id: '1',
-        name: 'Product 1',
+        id: '6',
+        name: 'Product 6',
         price: 10.99,
-        image: '../assets/img/kid001.png',
+        image: kid5,
+        description: 'This is the # product'
+    },
+    {
+        id: '7',
+        name: 'Product 7',
+        price: 10.99,
+        image: kid6,
+        description: 'This is the ## product'
+    },
+    {
+        id: '8',
+        name: 'Product 8',
+        price: 10.99,
+        image: kid7,
+        description: 'This is the ## product'
+    },
+    {
+        id: '9',
+        name: 'Product 8',
+        price: 10.99,
+        image: kid8,
         description: 'This is the first product'
     },
     {
-        id: '1',
-        name: 'Product 1',
+        id: '10',
+        name: 'Product 10',
         price: 10.99,
-        image: '../assets/img/kid001.png',
-        description: 'This is the first product'
+        image: kid9,
+        description: 'This is the # product'
     },
     {
-        id: '1',
-        name: 'Product 1',
+        id: '11',
+        name: 'Product 11',
         price: 10.99,
-        image: '../assets/img/kid001.png',
-        description: 'This is the first product'
+        image: kid10,
+        description: 'This is the # product'
     },
     {
-        id: '1',
-        name: 'Product 1',
+        id: '12',
+        name: 'Product 12',
         price: 10.99,
-        image: '../assets/img/kid001.png',
-        description: 'This is the first product'
+        image: kid11,
+        description: 'This is the # product'
     },
     {
-        id: '1',
-        name: 'Product 1',
+        id: '13',
+        name: 'Product 13',
         price: 10.99,
-        image: '../assets/img/kid001.png',
-        description: 'This is the first product'
+        image: kid12,
+        description: 'This is the # product'
     },
     {
-        id: '1',
-        name: 'Product 1',
+        id: '14',
+        name: 'Product 14',
         price: 10.99,
-        image: '../assets/img/kid001.png',
-        description: 'This is the first product'
+        image: kid13,
+        description: 'This is the ## product'
     },
     {
-        id: '1',
-        name: 'Product 1',
+        id: '15',
+        name: 'Product 15',
         price: 10.99,
-        image: '../assets/img/kid001.png',
-        description: 'This is the first product'
+        image: kid14,
+        description: 'This is the ## product'
     },
     {
-        id: '1',
-        name: 'Product 1',
+        id: '16',
+        name: 'Product 15',
         price: 10.99,
-        image: '../assets/img/kid001.png',
-        description: 'This is the first product'
-    },
-    {
-        id: '1',
-        name: 'Product 1',
-        price: 10.99,
-        image: '../assets/img/kid001.png',
-        description: 'This is the first product'
-    },
-    {
-        id: '1',
-        name: 'Product 1',
-        price: 10.99,
-        image: '../assets/img/kid001.png',
-        description: 'This is the first product'
-    },
+        image: kid15,
+        description: 'This is the ## product'
+    },   
 ]
 

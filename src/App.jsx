@@ -3,7 +3,7 @@ import LayOut from './Component/LayOut';
 import Home from './Component/Home';
 import Products from './Component/Products';
 import Services from './Component/Services';
-import LogIn from './Component/LogIn';
+import LogIn from './Component/SignIn';
 import Register from './Component/Register';
 import About from './Component/About';
 import Contact from './Component/Contact';

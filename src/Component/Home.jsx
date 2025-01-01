@@ -30,7 +30,7 @@ const Home = () => {
       {/* Products Section */}
       <div className="h-screen pt-20">
         <h2 className="text-center text-2xl text-orange-300">OUR PRODUCTS</h2>
-        <div className="grid grid-cols-3 gap-4 text-center mt-10">
+        <div className="grid grid-cols-3 text-center mt-10">
           {slides.map((product) => (
             <div key={product.id}>
               <img src={product.image} alt={product.title} />

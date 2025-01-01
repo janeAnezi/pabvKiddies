@@ -19,7 +19,7 @@ const Home = () => {
                 }}
                 key={slide.id}
                 >
-                <div className="w-full h-full bg-black/80 flex flex-col items-center justify-center text-white">
+                <div className="w-full h-full bg-black/60 flex flex-col items-center justify-center text-white">
                     <h2>{slide.title}</h2>
                     <p>{slide.description}</p>
                 </div>

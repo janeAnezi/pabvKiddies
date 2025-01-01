@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <main className="bg-slate-400">
+    <main className="bg-slate-50">
       {/* Carousel Section */}
         <div className="max-w-lg">
             <Carousel autoSlide={true}>
@@ -41,7 +41,7 @@ const Home = () => {
             ))}
             </div>
             <div className="text-center mt-10">
-            <Link to="/products" className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">
+            <Link to="/products" className="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-700">
                 View More
             </Link>
             </div>

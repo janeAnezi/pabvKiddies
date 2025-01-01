@@ -17,6 +17,10 @@ import kid13 from '../assets/img/kid02.png'
 import kid14 from '../assets/img/kid03.png'
 import kid15 from '../assets/img/kid03.png'
 import kid16 from '../assets/img/kid04.png'
+import ser1 from '../assets/img/ser3.jpeg'
+import ser2 from '../assets/img/ser4.jpeg'
+import ser3 from '../assets/img/ser5.jpeg'
+import ser4 from '../assets/img/ser6.jpeg'
 
 export const slides = [
     {
@@ -162,27 +166,27 @@ const services = [
       title: 'Custom Kids Fashion',
       description:
         'We design and create bespoke fashion wears tailored to fit your kids perfectly, combining comfort and style.',
-      image: '../assets/img/kids-fashion.jpg', 
+      image: ser1, 
     },
     {
       id: 2,
       title: 'Tailoring Materials',
       description:
         'Shop high-quality tailoring materials to create your own unique designs with ease and precision.',
-      image: '../assets/img/tailoring-materials.jpg', 
+      image: ser2, 
     },
     {
       id: 3,
       title: 'Fashion Styling',
       description:
         'Discover the latest trends in kids’ fashion and let our expert stylists bring out the best looks for your little ones.',
-      image: '../assets/img/fashion-styling.jpg',
+      image: ser3,
     },
     {
       id: 4,
       title: 'Creative Fashion Inspiration',
       description:
         'Explore a collection of innovative fashion ideas and get inspired by the best kids’ styles in the industry.',
-      image: '../assets/img/fashion-inspiration.jpg', 
+      image: ser4 , 
     },
   ];

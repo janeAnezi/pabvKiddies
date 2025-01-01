@@ -160,7 +160,7 @@ export const products = [
 ];
 
 // ######## SERVICES
-const services = [
+export const services = [
     {
       id: 1,
       title: 'Custom Kids Fashion',

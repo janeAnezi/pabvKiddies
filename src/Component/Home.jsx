@@ -1,4 +1,4 @@
-import { slides, products } from "./content";
+import { slides, products, services } from "./content";
 import Carousel from "../Component/Carousel";
 import { Link } from "react-router-dom";
 
@@ -29,23 +29,85 @@ const Home = () => {
         </div>
 
       {/* Products Section */}
-        <section className="pt-20">
-            <h2 className="text-center text-2xl text-orange-300">OUR PRODUCTS</h2>
-            <div className="grid grid-cols-3 gap-4 text-center mt-10">
-            {products.slice(0, 6).map((product) => (
-                <div key={product.id} className="border p-4 rounded-lg shadow-lg">
-                <img src={product.image} alt={product.name} className="w-full h-60 object-cover rounded-lg" />
-                <h3 className="text-lg font-semibold mt-4">{product.name}</h3>
-                <p className="text-gray-600">${product.price}</p>
+        <section className="py-20 px-4">
+            <h2 className="text-center text-2xl text-orange-300 font-bold">OUR PRODUCTS</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-center mt-10">
+                {products.slice(0, 6).map((product) => (
+                <div key={product.id} className="border p-4 rounded-lg shadow-lg bg-white">
+                    <img
+                    src={product.image}
+                    alt={product.name}
+                    className="w-full h-40 md:h-60 object-cover rounded-lg"
+                    />
+                    <h3 className="text-lg font-semibold mt-4">{product.name}</h3>
+                    <p className="text-gray-600">${product.price}</p>
                 </div>
-            ))}
+                ))}
             </div>
-            <div className="text-right mr-20 mt-10">
-            <Link to="/products" className="bg-orange-500 text-white text-xs px-2 py-1 rounded hover:bg-orange-700">
+            <div className="text-center mt-10">
+                <Link
+                to="/products"
+                className="bg-orange-500 text-white text-sm px-4 py-2 rounded hover:bg-orange-700"
+                >
                 View More
-            </Link>
+                </Link>
             </div>
         </section>
+
+        {/* Services section */}
+        <section className="bg-gray-100 py-20">
+            <div className="max-w-7xl mx-auto px-4">
+                <h2 className="text-center text-3xl font-bold text-orange-400 mb-8">
+                Our Services
+                </h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                {services.map((service) => (
+                    <div
+                    key={service.id}
+                    className="bg-white shadow-lg rounded-lg overflow-hidden"
+                    >
+                    <img
+                        src={service.image}
+                        alt={service.title}
+                        className="w-full h-40 object-cover"
+                    />
+                    <div className="p-6">
+                        <h3 className="text-lg font-semibold text-gray-800 mb-2">
+                        {service.title}
+                        </h3>
+                        <p className="text-gray-600 text-sm">{service.description}</p>
+                    </div>
+                    </div>
+                ))}
+                </div>
+            </div>
+        </section>
+
+        {/* About section */}
+        <section className="bg-orange-50 py-16 px-4">
+            <div className="max-w-5xl mx-auto text-center">
+                <h2 className="text-3xl font-bold text-orange-500">About Us</h2>
+                <p className="mt-6 text-gray-700">
+                Welcome to <span className="font-semibold">PABVkiddies</span>, where fashion meets tradition and creativity! 
+                We specialize in creating bespoke Ankara outfits for kids that bring out their unique personalities. 
+                Our designs are vibrant, stylish, and made to ensure comfort while showcasing the rich cultural heritage of Africa.
+                </p>
+                <p className="mt-4 text-gray-700">
+                Whether you're looking for a trendy outfit for a special occasion, quality tailoring materials, or the best 
+                fashion styles for your little ones, we’ve got you covered. Let your child stand out and shine in fashion that 
+                tells a story.
+                </p>
+                <div className="mt-8">
+                <Link
+                    to="/about"
+                    className="bg-orange-500 text-white px-6 py-3 rounded-lg hover:bg-orange-700"
+                >
+                    Learn More
+                </Link>
+                </div>
+            </div>
+        </section>
+
     </main>
   );
 };

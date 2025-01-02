@@ -26,22 +26,23 @@ export const slides = [
     {
         id: '1',
         image: hero1,
-        title: "Hero 1",
-        description: "This is the first slide"
+        title: "A Fusion of Tradition & Style",
+        description: `Explore the perfect blend of African heritage and modern fashion with PABVkiddies. \n Our designs bring out the vibrancy of African prints while ensuring comfort and style \n for your little ones.`
     },
     {
         id: '2',
         image: hero2,
-        title: "Hero 2",
-        description: "This is the second slide"
+        title: "Quality You Can Trust",
+        description: `Every piece is crafted with love and attention to detail.\n We use only the finest fabrics to create fashion-forward looks that your kids \n will love to wear.`
     },
     {
         id: '3',
         image: hero3,
-        title: "Hero 3",
-        description: "This is the third slide "
+        title: "Trendy & Timeless Fashion",
+        description: `From vibrant patterns to elegant cuts, PABVkiddies offers timeless fashion that stands out. \n Keep your child stylish and comfortable all year round with our \n exclusive collections.`
     },
 ];
+
 
 // ############## PRODUCTS
 export const products = [

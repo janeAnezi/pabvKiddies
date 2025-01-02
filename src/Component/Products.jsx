@@ -5,7 +5,7 @@ const Products = () => {
   return (
     <main className="bg-white">
       <section className="pt-20">
-        <h2 className="text-center text-2xl text-orange-300">ALL PRODUCTS</h2>
+        <h2 className="text-4xl font-bold text-orange-500 text-center">ALL PRODUCTS</h2>
         <div className="grid grid-cols-3 gap-4 text-center mt-10">
           {products.map((product) => (
             <Link to={`/product/${product.id}`} key={product.id} className="border p-4 rounded-lg shadow-lg">

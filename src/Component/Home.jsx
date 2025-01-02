@@ -15,14 +15,14 @@ const Home = () => {
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     width: '100%',
-                    height: '450px',
+                    height: '400px',
                 }}
                 key={slide.id}
                 >
-                <div className="w-full h-full bg-black/60 flex flex-col items-center justify-center text-white py-24">
+                <div className="w-full h-full bg-black/60 flex flex-col items-center justify-center text-white py-20">
                     <h2 className="font-bold text-4xl text-orange-500">{slide.title}</h2>
                     <p className="text-orange-100 mt-6 w-[60%] text-center text-xl">{slide.description}</p>
-                    <button className="mt-6 bg-sky-500 text-orange-50 px-4 py-2 text-xs font-bold rounded-md hover:bg-yellow-800 transition">Unlock Trending Styles</button>
+                    <button className="mt-6 bg-sky-500 text-orange-50 px-4 py-2 text-xs font-bold rounded-md hover:bg-yellow-800 transition"><Link to='/register'> Unlock Trending Styles </Link></button>
                 </div>
                 </div>
             ))}

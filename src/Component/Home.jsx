@@ -99,7 +99,7 @@ const Home = () => {
                 </p>
                 <div className="mt-8">
                 <Link
-                    to="/about"
+                    to="about"
                     className="bg-orange-500 text-white px-6 py-3 rounded-lg hover:bg-orange-700"
                 >
                     Learn More

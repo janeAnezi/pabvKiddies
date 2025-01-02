@@ -1,4 +1,4 @@
-import hero1 from '../assets/img/hero02.jpeg'
+import hero1 from '../assets/img/sketch5.png'
 import hero2 from '../assets/img/kid01.jpeg'
 import hero3 from '../assets/img/hero03.jpeg'
 import kid1 from '../assets/img/kid001.png'
@@ -189,4 +189,35 @@ export const services = [
         'Explore a collection of innovative fashion ideas and get inspired by the best kids’ styles in the industry.',
       image: ser4 , 
     },
-  ];
+]; 
+
+// ##### About content
+export const cardData = [
+    {
+      title: "Our Mission",
+      frontText: "We bring Ankara fashion to life for kids.",
+      backText: `At PABVkiddies, we believe in blending culture with creativity. 
+      Our mission is to create beautiful, comfortable, and stylish outfits 
+      for kids that celebrate African heritage.`,
+    },
+    {
+      title: "Why Choose Us?",
+      frontText: "Quality, Style, and Affordability.",
+      backText: `- Unique Ankara designs crafted for kids.\n
+      - Premium materials for comfort and durability.\n
+      - Affordable prices for every family.`,
+    },
+    {
+      title: "Our Services",
+      frontText: "Tailored to perfection.",
+      backText: `- Bespoke Ankara outfits for kids.\n
+      - Premium tailoring materials.\n
+      - Exclusive fashion styles for special occasions.`,
+    },
+    {
+      title: "Join Our Journey",
+      frontText: "Redefining kids' fashion.",
+      backText: `Let your child shine with PABVkiddies. 
+      Together, we bring creativity and culture into every outfit.`,
+    },
+];

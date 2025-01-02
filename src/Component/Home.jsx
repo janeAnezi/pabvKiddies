@@ -19,11 +19,16 @@ const Home = () => {
                 }}
                 key={slide.id}
                 >
-                <div className="w-full h-full bg-black/60 flex flex-col items-center justify-center text-white py-20">
-                    <h2 className="font-bold text-4xl text-orange-500">{slide.title}</h2>
-                    <p className="text-orange-100 mt-6 w-[60%] text-center text-xl">{slide.description}</p>
-                    <button className="mt-6 bg-sky-500 text-orange-50 px-4 py-2 text-xs font-bold rounded-md hover:bg-yellow-800 transition"><Link to='/register'> Unlock Trending Styles </Link></button>
-                </div>
+                    <div 
+                        className="w-full h-full bg-black/60 flex flex-col items-center justify-center text-white py-20">
+                        <h2 className="font-bold text-4xl text-orange-500">{slide.title}</h2>
+                        <p className="text-orange-100 mt-6 w-[60%] text-center text-xl">{slide.description}</p>
+                        <Link to='/register'>
+                            <button className="mt-6 bg-sky-500 text-orange-50 px-4 py-2 text-xs font-bold rounded-md hover:bg-yellow-800 transition z-20">
+                                Unlock Trending Styles
+                            </button>
+                        </Link>
+                    </div>
                 </div>
             ))}
             </Carousel>

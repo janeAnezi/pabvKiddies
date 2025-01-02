@@ -2,6 +2,7 @@ import { slides, products, services } from "./content";
 import Carousel from "../Component/Carousel";
 import { Link } from "react-router-dom";
 
+
 const Home = () => {
   return (
     <main className="bg-slate-50">
@@ -21,10 +22,10 @@ const Home = () => {
                 >
                     <div 
                         className="w-full h-full bg-black/60 flex flex-col items-center justify-center text-white py-20">
-                        <h2 className="font-bold text-4xl text-orange-500">{slide.title}</h2>
-                        <p className="text-orange-100 mt-6 w-[60%] text-center text-xl">{slide.description}</p>
+                        <h2 className="font-bold text-4xl text-orange-500 pointer-events-auto">{slide.title}</h2>
+                        <p className="text-orange-100 mt-6 w-[60%] text-center text-xl pointer-events-auto">{slide.description}</p>
                         <Link to='/register'>
-                            <button className="mt-6 bg-sky-500 text-orange-50 px-4 py-2 text-xs font-bold rounded-md hover:bg-yellow-800 transition z-20">
+                            <button className="mt-6 bg-sky-500 text-orange-50 px-4 py-2 text-xs font-bold rounded-md hover:bg-yellow-800 transition pointer-events-auto">
                                 Unlock Trending Styles
                             </button>
                         </Link>

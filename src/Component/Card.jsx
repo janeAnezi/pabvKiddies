@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import SpaceCity from '../assets/img/kid006.png'
+import sketch from '../assets/img/sketch1.png'
 
 function CardFlip() {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -14,10 +14,11 @@ function CardFlip() {
   };
 
   return (
-    <div className="flex items-center justify-center bg-black h-[800px] cursor-pointer">
+    <div className="flex items-center justify-center cursor-pointer m-auto mb-10">
       <div
-        className="flip-card w-[600px] h-[360px] rounded-md"
-        onClick={handleFlip}
+        className="flip-card w-[250px] h-[260px] rounded-md"
+        onMouseEnter={handleFlip} 
+        onMouseLeave={handleFlip} 
       >
         <motion.div
           className="flip-card-inner w-[100%] h-[100%]"
@@ -28,14 +29,14 @@ function CardFlip() {
         >
           <div
             className="flip-card-front w-[100%] h-[100%] bg-cover border-[1px] text-white rounded-lg p-4"
-            style={{ backgroundImage: `url(${SpaceCity})` }}
+            style={{ backgroundImage: `url(${sketch})` }}
           >
             <h1 className="text-2xl font-bold">Sky</h1>
             <p>Live on top of the world</p>
           </div>
           <div
             className="flip-card-back w-[100%] h-[100%] bg-cover border-[1px] text-white rounded-lg p-4"
-            style={{ backgroundImage: `url(${SpaceCity})` }}
+            style={{ backgroundImage: `url(${sketch})` }}
           >
             <h1 className="text-2xl font-bold">Earth</h1>
             <p>Or in the maze of the city</p>

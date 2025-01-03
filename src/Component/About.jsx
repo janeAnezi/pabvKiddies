@@ -5,7 +5,7 @@ const About = () => {
   return (
     <section className="min-h-screen relative">
       <div className="text-center mb-10 w-full relative">
-        <div className="h-[50vh] relative overflow-hidden">
+        <div className="h-[60vh] relative overflow-hidden">
           <video 
             src={pabvid} 
             autoPlay 
@@ -20,6 +20,14 @@ const About = () => {
             Explore the creativity and elegance of PABVkiddies, where African heritage meets modern designs for kids.
           </p>
         </div>
+      </div>
+
+      <div>
+        <h2 className="text-3xl font-bold text-orange-500">Our Mission</h2>
+        <p>We bring Ankara fashion to life for kids.</p>
+        <p>At PABVkiddies, we believe in blending culture with creativity. 
+      Our mission is to create beautiful, comfortable, and stylish outfits 
+      for kids that celebrate African heritage.</p>
       </div>
     </section>
   );

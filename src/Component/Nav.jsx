@@ -17,7 +17,7 @@ const Nav = () => {
   };
 
   return (
-    <nav className="text-slate-500 w-screen h-14 grid place-items-center fixed top-0 left-0 z-20 border-b-4 backdrop-blur-sm">
+    <nav className="text-sky-500 font-bold w-screen h-14 grid place-items-center fixed top-0 left-0 z-20 border-b-4 backdrop-blur-sm ">
       <div className="container mx-auto flex justify-between items-start pt-4 h-full px-4">
         <button onClick={closeNavHandler} className='w-12 '>
             <Link to="/" >

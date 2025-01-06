@@ -1,16 +1,27 @@
-import React from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const Contact = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000, 
+      easing: 'ease-in-out', 
+      once: false, 
+      mirror: true, 
+    });
+  }, []);
+  
   return (
     <section className="min-h-screen bg-gray-50 py-20 px-6">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-bold text-center text-orange-500">Contact Us</h2>
+        <h2 data-aos="fade-down" className="text-4xl font-bold text-center text-orange-500">Contact Us</h2>
         <p className="text-center text-gray-600 mt-4">
           Have questions? We'd love to hear from you. Reach out to us today!
         </p>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-12">
-          <div className="bg-white p-8 shadow-lg rounded-lg">
+          <div data-aos="fade-left" className="bg-white p-8 shadow-lg rounded-lg">
             <h3 className="text-2xl font-semibold text-gray-700">Send Us a Message</h3>
             <form className="mt-6 space-y-6">
               <div>
@@ -48,7 +59,7 @@ const Contact = () => {
               </button>
             </form>
           </div>
-          <div className="space-y-6">
+          <div data-aos="fade-right" className="space-y-6">
             <div className="bg-white p-6 shadow-lg rounded-lg">
               <h3 className="text-lg font-semibold text-gray-700">Contact Details</h3>
               <p className="text-gray-600 mt-2">
@@ -58,7 +69,7 @@ const Contact = () => {
                 <span className="font-medium">Email:</span> contact@pabvkiddies.com
               </p>
               <p className="text-gray-600 mt-2">
-                <span className="font-medium">Address:</span> 123 Fashion Street, Abuja, Nigeria
+                <span className="font-medium">Address:</span> 123 Onuiyi nsukka, Enugu. Nigeria
               </p>
             </div>
             <div className="h-64">

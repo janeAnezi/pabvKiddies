@@ -9,10 +9,10 @@ import 'aos/dist/aos.css';
 const Home = () => {
     useEffect(() => {
         AOS.init({
-          duration: 2000, // Animation duration in milliseconds
-          easing: 'ease-in-out', // Animation easing
-          once: false, // Whether animation should happen only once
-          mirror: true, // Whether elements should animate out while scrolling past them
+          duration: 2000, 
+          easing: 'ease-in-out', 
+          once: false, 
+          mirror: true, 
         });
       }, []);
 

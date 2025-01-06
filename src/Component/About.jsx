@@ -37,7 +37,7 @@ const About = () => {
                 </p>
             </div>
         </div>
-        <div className='flex justify-center items-center gap-8 bg-orange-50 py-10'>
+        <div className='flex justify-center items-center gap-8 bg-orange-50 py-10 my-16'>
             <div className='w-80'>
                 <h2 className="text-3xl font-bold text-orange-500">Why Choose Us?</h2>
                 <p className='text-sky-400'>Quality, Style, and Affordability.</p>

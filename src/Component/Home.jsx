@@ -1,6 +1,8 @@
 import { slides, products, services } from "./content";
 import Carousel from "../Component/Carousel";
 import { Link } from "react-router-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const Home = () => {

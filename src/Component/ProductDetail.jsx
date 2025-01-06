@@ -14,7 +14,7 @@ const ProductDetail = () => {
   }
 
   const handleAddToCart = () => {
-    navigate('/signin'); 
+    navigate('/login'); 
   };
 
   const handleOrderNow = () => {
@@ -29,8 +29,10 @@ const ProductDetail = () => {
     setQuantity((prev) => (prev > 1 ? prev - 1 : 1));
   };
 
+  const totalPrice = (product.price * quantity).toFixed(2);
+
   return (
-    <main className="bg-white">
+    <main className="bg-white mt-20">
       <div className="max-w-4xl mx-auto py-12 px-6 sm:px-12 flex flex-col sm:flex-row gap-12">
         <div className="flex-1">
           <img
@@ -38,13 +40,9 @@ const ProductDetail = () => {
             alt={product.name}
             className="w-full h-80 object-cover rounded-lg shadow-md"
           />
-          <h2 className="text-3xl font-bold mt-6">{product.name}</h2>
-          <p className="text-xl text-gray-700 mt-4">${product.price}</p>
-          <p className="text-gray-600 mt-2 leading-relaxed">{product.description}</p>
         </div>
 
         <div className="flex-1 flex flex-col justify-between">
-          {/* Quantity Control */}
           <div className="flex items-center gap-4 mb-6">
             <button
               onClick={decrementQuantity}
@@ -60,8 +58,13 @@ const ProductDetail = () => {
               +
             </button>
           </div>
-
-          {/* Action Buttons */}
+          <div> 
+            <h2 className="text-3xl font-bold mt-6">{product.name}</h2>
+            <p className="text-xl text-gray-700 mt-4">Price per item: ${product.price.toFixed(2)}</p>
+            <p className="text-xl font-semibold text-gray-800 mt-2">Total Price: ${totalPrice}</p>
+            <p className="text-gray-600 mt-2 leading-relaxed">{product.description}</p>
+          </div>
+          
           <div className="flex flex-col sm:flex-row gap-4">
             <button
               onClick={handleAddToCart}

@@ -5,7 +5,7 @@ import { BsWhatsapp } from "react-icons/bs";
 
 const Footer = () => {
     return (
-      <footer className="bg-gray-800 text-white py-10">
+      <footer className="bg-gray-800 text-white py-10 text-center">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <div>
@@ -32,7 +32,7 @@ const Footer = () => {
                 <li>Address: 123 Onuiyi nsukka, Enugu. Nigeria</li>
               </ul>
             </div>
-            <div>
+            <div className="flex flex-col items-center text-center">
               <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
               <div className="flex space-x-4">
                 <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">

@@ -74,7 +74,7 @@ const ProductDetail = () => {
             </button>
             <button
               onClick={handleOrderNow}
-              className="bg-sky-500 text-white px-6 py-3 rounded shadow hover:bg-green-700"
+              className="bg-sky-500 text-white px-6 py-3 rounded shadow hover:bg-sky-700"
             >
               Order Now
             </button>

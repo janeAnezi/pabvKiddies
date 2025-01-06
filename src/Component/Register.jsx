@@ -4,7 +4,7 @@ const Register = () => {
   const navigate = useNavigate();
 
   const handleSignIn = () => {
-    navigate('/signin'); 
+    navigate('/login'); 
   };
 
   const handleRegister = (e) => {

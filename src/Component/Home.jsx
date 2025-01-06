@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { slides, products, services } from "./content";
 import Carousel from "../Component/Carousel";
 import { Link } from "react-router-dom";
@@ -6,6 +7,15 @@ import 'aos/dist/aos.css';
 
 
 const Home = () => {
+    useEffect(() => {
+        AOS.init({
+          duration: 2000, // Animation duration in milliseconds
+          easing: 'ease-in-out', // Animation easing
+          once: false, // Whether animation should happen only once
+          mirror: true, // Whether elements should animate out while scrolling past them
+        });
+      }, []);
+
   return (
     <main className="bg-slate-50">
       {/* Carousel Section */}
@@ -39,10 +49,10 @@ const Home = () => {
 
       {/* Products Section */}
         <section className="py-20 px-4">
-            <h2 className="text-center text-2xl text-orange-300 font-bold">OUR PRODUCTS</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-center mt-10">
+            <h2 data-aos="fade-up" className="text-center text-2xl text-orange-300 font-bold">OUR PRODUCTS</h2>
+            <div data-aos="fade-up" data-aos-duration="4000" className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-center mt-10">
                 {products.slice(0, 6).map((product) => (
-                <div key={product.id} className="border p-4 rounded-lg shadow-lg bg-white">
+                <div data-aos="zoom-out-down" key={product.id} className="border p-4 rounded-lg shadow-lg bg-white">
                     <img
                     src={product.image}
                     alt={product.name}
@@ -66,14 +76,18 @@ const Home = () => {
         {/* Services section */}
         <section className="bg-gray-100 py-20">
             <div className="max-w-7xl mx-auto px-4">
-                <h2 className="text-center text-3xl font-bold text-orange-400 mb-8">
+                <h2 data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500" 
+                    className="text-center text-3xl font-bold text-orange-400 mb-8">
                 Our Services
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 {services.map((service) => (
-                    <div
-                    key={service.id}
-                    className="bg-white shadow-lg rounded-lg overflow-hidden"
+                    <div 
+                        data-aos="fade-up-left"
+                        key={service.id}
+                        className="bg-white shadow-lg rounded-lg overflow-hidden"
                     >
                     <img
                         src={service.image}
@@ -93,15 +107,15 @@ const Home = () => {
         </section>
 
         {/* About section */}
-        <section className="bg-orange-50 py-16 px-4">
-            <div className="max-w-5xl mx-auto text-center">
+        <section className="bg-orange-50 py-16 px-4 ">
+            <div data-aos="fade-up-left" className="max-w-5xl mx-auto text-center w-[60%]">
                 <h2 className="text-3xl font-bold text-orange-500">About Us</h2>
-                <p className="mt-6 text-gray-700">
+                <p className="mt-6 text-gray-700 text-sm">
                 Welcome to <span className="font-semibold">PABVkiddies</span>, where fashion meets tradition and creativity! 
                 We specialize in creating bespoke Ankara outfits for kids that bring out their unique personalities. 
                 Our designs are vibrant, stylish, and made to ensure comfort while showcasing the rich cultural heritage of Africa.
                 </p>
-                <p className="mt-4 text-gray-700">
+                <p data-aos="flip-left" className="mt-4 text-sky-500">
                 Whether you're looking for a trendy outfit for a special occasion, quality tailoring materials, or the best 
                 fashion styles for your little ones, we’ve got you covered. Let your child stand out and shine in fashion that 
                 tells a story.

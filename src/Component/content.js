@@ -17,6 +17,24 @@ import kid13 from '../assets/img/img17.jpg'
 import kid14 from '../assets/img/img18.jpg'
 import kid15 from '../assets/img/img19.jpg'
 import kid16 from '../assets/img/img20.jpg'
+import kid17 from '../assets/img/img21.jpg'
+import kid18 from '../assets/img/img22.jpg'
+import kid19 from '../assets/img/img23.jpg'
+import kid20 from '../assets/img/img24.jpg'
+import kid21 from '../assets/img/img25.jpg'
+import kid22 from '../assets/img/img26.jpg'
+import kid23 from '../assets/img/img27.jpg'
+import kid24 from '../assets/img/img28.jpg'
+import kid25 from '../assets/img/img29.jpg'
+import kid26 from '../assets/img/img30.jpg'
+import kid27 from '../assets/img/img31.jpg'
+import kid28 from '../assets/img/img32.jpg'
+import kid29 from '../assets/img/img33.jpg'
+import kid30 from '../assets/img/img34.jpg'
+import kid31 from '../assets/img/img35.jpg'
+import kid32 from '../assets/img/img36.jpg'
+import kid33 from '../assets/img/img37.jpg'
+import kid34 from '../assets/img/img38.jpg'
 import ser1 from '../assets/img/ser3.jpeg'
 import ser2 from '../assets/img/ser4.jpeg'
 import ser3 from '../assets/img/ser5.jpeg'
@@ -43,122 +61,248 @@ export const slides = [
     },
 ];
 
-
 // ############## PRODUCTS
 export const products = [
-    {
-        id: '1',
-        name: 'Product 1',
-        price: 10.99,
-        image: kid1,
-        description: 'This is the first product'
-    },
-    {
-        id: '2',
-        name: 'Product 2',
-        price: 10.99,
-        image: kid2,
-        description: 'This is the second product'
-    },
-    {
-        id: '3',
-        name: 'Product 3',
-        price: 10.99,
-        image: kid3,
-        description: 'This is the third product'
-    },
-    {
-        id: '4',
-        name: 'Product 4',
-        price: 10.99,
-        image: kid16,
-        description: 'This is the fourth product'
-    },
-    {
-        id: '5',
-        name: 'Product 5',
-        price: 10.99,
-        image: kid4,
-        description: 'This is the ##product'
-    },
-    {
-        id: '6',
-        name: 'Product 6',
-        price: 10.99,
-        image: kid5,
-        description: 'This is the # product'
-    },
-    {
-        id: '7',
-        name: 'Product 7',
-        price: 10.99,
-        image: kid6,
-        description: 'This is the ## product'
-    },
-    {
-        id: '8',
-        name: 'Product 8',
-        price: 10.99,
-        image: kid7,
-        description: 'This is the ## product'
-    },
-    {
-        id: '9',
-        name: 'Product 8',
-        price: 10.99,
-        image: kid8,
-        description: 'This is the first product'
-    },
-    {
-        id: '10',
-        name: 'Product 10',
-        price: 10.99,
-        image: kid9,
-        description: 'This is the # product'
-    },
-    {
-        id: '11',
-        name: 'Product 11',
-        price: 10.99,
-        image: kid10,
-        description: 'This is the # product'
-    },
-    {
-        id: '12',
-        name: 'Product 12',
-        price: 10.99,
-        image: kid11,
-        description: 'This is the # product'
-    },
-    {
-        id: '13',
-        name: 'Product 13',
-        price: 10.99,
-        image: kid12,
-        description: 'This is the # product'
-    },
-    {
-        id: '14',
-        name: 'Product 14',
-        price: 10.99,
-        image: kid13,
-        description: 'This is the ## product'
-    },
-    {
-        id: '15',
-        name: 'Product 15',
-        price: 10.99,
-        image: kid14,
-        description: 'This is the ## product'
-    },
-    {
-        id: '16',
-        name: 'Product 15',
-        price: 10.99,
-        image: kid15,
-        description: 'This is the ## product'
-    },   
+  {
+      id: '1',
+      name: 'Beautiful Ankara Gown',
+      price: 7000,
+      image: kid1,
+      description: 'A nicely tailored Ankara gown with vibrant patterns perfect for any occasion.'
+  },
+  {
+      id: '2',
+      name: 'Classic Ankara gown',
+      price: 8000,
+      image: kid2,
+      description: 'A chic and comfortable Ankara jumpsuit ideal for playful days.'
+  },
+  {
+      id: '3',
+      name: 'Elegant Ankara Party Dress',
+      price: 9500,
+      image: kid3,
+      description: 'A stunning Ankara party dress with a touch of elegance for special events.'
+  },
+  {
+      id: '4',
+      name: 'Trendy Ankara Shorts',
+      price: 6000,
+      image: kid4,
+      description: 'A cool Ankara shirt paired with matching shorts for casual outings.'
+  },
+  {
+      id: '5',
+      name: 'Floral Ankara Baby shorts',
+      price: 5000,
+      image: kid5,
+      description: 'A soft and adorable Ankara baby dress featuring floral patterns.'
+  },
+  {
+      id: '6',
+      name: 'Vibrant Ankara Skater Dress',
+      price: 7000,
+      image: kid6,
+      description: 'A lively skater dress in Ankara print, perfect for twirling and fun.'
+  },
+  {
+      id: '7',
+      name: 'Ankara Gentleman Set',
+      price: 8500,
+      image: kid7,
+      description: 'A classic Ankara outfit for boys, featuring a stylish shirt and pants.'
+  },
+  {
+      id: '8',
+      name: 'Casual Ankara Tunic Dress',
+      price: 6500,
+      image: kid8,
+      description: 'A simple yet fashionable tunic dress made with quality Ankara fabric.'
+  },
+  {
+      id: '9',
+      name: 'Modern Ankara Maxi Gown',
+      price: 9000,
+      image: kid9,
+      description: 'A long flowing Ankara gown with a modern touch for formal occasions.'
+  },
+  {
+      id: '10',
+      name: 'Adorable Ankara Playsuit',
+      price: 7500,
+      image: kid10,
+      description: 'A playful Ankara playsuit designed for comfort and style.'
+  },
+  {
+      id: '11',
+      name: 'Colorful Ankara Wrap Dress',
+      price: 8500,
+      image: kid11,
+      description: 'A wrap-style Ankara dress with vibrant colors and a unique fit.'
+  },
+  {
+      id: '12',
+      name: 'Bold Ankara Two-Piece Set',
+      price: 8000,
+      image: kid12,
+      description: 'A fashionable two-piece set with striking Ankara patterns.'
+  },
+  {
+      id: '13',
+      name: 'Lovely Ankara High-Low Dress',
+      price: 9500,
+      image: kid13,
+      description: 'A trendy high-low dress that combines elegance with traditional flair.'
+  },
+  {
+      id: '14',
+      name: 'Fun Ankara Romper',
+      price: 7000,
+      image: kid14,
+      description: 'A cute and fun Ankara romper for active kids on the go.'
+  },
+  {
+      id: '15',
+      name: 'Ankara Princess Ball Gown',
+      price: 12000,
+      image: kid15,
+      description: 'A majestic ball gown with intricate Ankara designs for your little princess.'
+  },
+  {
+      id: '16',
+      name: 'Chic Ankara Peplum Top',
+      price: 6000,
+      image: kid16,
+      description: 'A stylish Ankara peplum top paired with a matching skirt.'
+  },
+  {
+      id: '17',
+      name: 'Playful Ankara Dungarees',
+      price: 7500,
+      image: kid17,
+      description: 'Trendy Ankara dungarees perfect for casual outings and playtime.'
+  },
+  {
+      id: '18',
+      name: 'Cute Ankara Ruffled Dress',
+      price: 8500,
+      image: kid18,
+      description: 'A charming Ankara dress with ruffled details for a playful look.'
+  },
+  {
+      id: '19',
+      name: 'Stylish Ankara Jacket',
+      price: 9000,
+      image: kid19,
+      description: 'An Ankara jacket to keep your kids warm while looking trendy.'
+  },
+  {
+      id: '20',
+      name: 'Elegant Ankara A-Line Dress',
+      price: 8500,
+      image: kid20,
+      description: 'A simple yet classy A-line dress with unique Ankara patterns.'
+  },
+  {
+      id: '21',
+      name: 'Casual Ankara Shirt',
+      price: 5000,
+      image: kid21,
+      description: 'A comfortable Ankara shirt perfect for everyday wear.'
+  },
+  {
+      id: '22',
+      name: 'Graceful Ankara Midi Dress',
+      price: 8000,
+      image: kid22,
+      description: 'A mid-length Ankara dress that blends grace with comfort.'
+  },
+  {
+      id: '23',
+      name: 'Vibrant Ankara Shorts',
+      price: 4500,
+      image: kid23,
+      description: 'Bright and colorful Ankara shorts designed for sunny days.'
+  },
+  {
+      id: '24',
+      name: 'Ankara Cape Dress',
+      price: 10000,
+      image: kid24,
+      description: 'A stunning Ankara dress with a unique cape design for standout occasions.'
+  },
+  {
+      id: '25',
+      name: 'Comfortable Ankara Joggers',
+      price: 6500,
+      image: kid25,
+      description: 'Ankara joggers combining style with ultimate comfort for kids.'
+  },
+  {
+      id: '26',
+      name: 'Unique Ankara Overalls',
+      price: 8500,
+      image: kid26,
+      description: 'Trendy overalls with Ankara patterns for an effortlessly cool look.'
+  },
+  {
+      id: '27',
+      name: 'Radiant Ankara Wrap Skirt',
+      price: 6000,
+      image: kid27,
+      description: 'A vibrant wrap skirt paired with a plain top for a stylish outfit.'
+  },
+  {
+      id: '28',
+      name: 'Lovely Ankara Flare Dress',
+      price: 9000,
+      image: kid28,
+      description: 'A beautiful flare dress that adds a touch of fun to traditional styles.'
+  },
+  {
+      id: '29',
+      name: 'Charming Ankara Tunic Set',
+      price: 7500,
+      image: kid29,
+      description: 'A tunic-style Ankara set perfect for both casual and formal events.'
+  },
+  {
+      id: '30',
+      name: 'Ankara Bowtie Outfit',
+      price: 7000,
+      image: kid30,
+      description: 'A smart Ankara outfit with a matching bowtie for dapper young boys.'
+  },
+  {
+      id: '31',
+      name: 'Modern Ankara Kaftan',
+      price: 8500,
+      image: kid31,
+      description: 'A stylish Ankara kaftan perfect for traditional occasions.'
+  },
+  {
+      id: '32',
+      name: 'Ankara Layered Dress',
+      price: 9500,
+      image: kid32,
+      description: 'A layered Ankara dress designed to give a unique and beautiful silhouette.'
+  },
+  {
+      id: '33',
+      name: 'Ankara Halter-Neck Dress',
+      price: 8500,
+      image: kid33,
+      description: 'A halter-neck Ankara dress that’s trendy and comfortable for your little fashionista.'
+  },
+  {
+      id: '34',
+      name: 'Exquisite Ankara Wedding Outfit',
+      price: 12000,
+      image: kid34,
+      description: 'A premium Ankara outfit perfect for weddings and special celebrations.'
+  },
 ];
+
 
 // ######## SERVICES
 export const services = [

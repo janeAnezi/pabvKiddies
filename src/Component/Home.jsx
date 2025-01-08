@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { slides, products, services } from "./content";
 import Carousel from "../Component/Carousel";
+import { TbCurrencyNaira } from "react-icons/tb";
 import { Link } from "react-router-dom";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -59,7 +60,7 @@ const Home = () => {
                     className="w-full h-40 md:h-60 object-cover rounded-lg"
                     />
                     <h3 className="text-lg font-semibold mt-4">{product.name}</h3>
-                    <p className="text-gray-600">${product.price}</p>
+                    <p className="text-gray-600 flex flex-row items-center ml-20"><TbCurrencyNaira className="text-lg"/>{product.price}</p>
                 </div>
                 ))}
             </div>

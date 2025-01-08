@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { products } from './content';
+import { TbCurrencyNaira } from "react-icons/tb";
 
 const Products = () => {
   return (
@@ -11,7 +12,7 @@ const Products = () => {
             <Link to={`/product/${product.id}`} key={product.id} className="border p-4 rounded-lg shadow-lg">
               <img src={product.image} alt={product.name} className="w-full h-40 object-cover rounded-lg" />
               <h3 className="text-lg font-semibold mt-4">{product.name}</h3>
-              <p className="text-gray-600">${product.price}</p>
+              <p className="text-gray-600 flex flex-row items-center ml-20"><TbCurrencyNaira className="text-lg"/>{product.price}</p>
               <p className="text-gray-500 text-sm">{product.description}</p>
             </Link>
           ))}

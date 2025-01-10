@@ -163,7 +163,7 @@ export const products = [
   },
   {
       id: '15',
-      name: 'Ankara Princess Ball Gown',
+      name: 'Ankara Princess Gown',
       price: 12000,
       image: kid15,
       description: 'A majestic ball gown with intricate Ankara designs for your little princess.'
@@ -191,7 +191,7 @@ export const products = [
   },
   {
       id: '19',
-      name: 'Stylish Ankara Jacket',
+      name: 'Stylish Ankara',
       price: 9000,
       image: kid19,
       description: 'An Ankara jacket to keep your kids warm while looking trendy.'
@@ -219,10 +219,10 @@ export const products = [
   },
   {
       id: '23',
-      name: 'Vibrant Ankara Shorts',
+      name: 'Vibrant Ankara skirt',
       price: 4500,
       image: kid23,
-      description: 'Bright and colorful Ankara shorts designed for sunny days.'
+      description: 'Bright and colorful Ankara skirts designed for sunny days.'
   },
   {
       id: '24',
@@ -233,24 +233,24 @@ export const products = [
   },
   {
       id: '25',
-      name: 'Comfortable Ankara Joggers',
+      name: 'Comfortable Ankara Gown',
       price: 6500,
       image: kid25,
-      description: 'Ankara joggers combining style with ultimate comfort for kids.'
+      description: 'Ankara Gown combining style with ultimate comfort for kids.'
   },
   {
       id: '26',
-      name: 'Unique Ankara Overalls',
+      name: 'Unique Ankara',
       price: 8500,
       image: kid26,
-      description: 'Trendy overalls with Ankara patterns for an effortlessly cool look.'
+      description: 'Trendy with Ankara patterns for an effortlessly cool look.'
   },
   {
       id: '27',
-      name: 'Radiant Ankara Wrap Skirt',
+      name: 'Radiant Ankara Gown',
       price: 6000,
       image: kid27,
-      description: 'A vibrant wrap skirt paired with a plain top for a stylish outfit.'
+      description: 'A vibrant ankara for a stylish outfit.'
   },
   {
       id: '28',

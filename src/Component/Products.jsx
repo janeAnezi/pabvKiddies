@@ -11,9 +11,14 @@ const Products = () => {
           {products.map((product) => (
             <Link to={`/product/${product.id}`} key={product.id} className="border p-4 rounded-lg shadow-lg">
               <img src={product.image} alt={product.name} className="w-full h-40 object-cover rounded-lg" />
-              <h3 className="text-lg font-semibold mt-4">{product.name}</h3>
-              <p className="text-gray-600 flex flex-row items-center ml-20"><TbCurrencyNaira className="text-lg"/>{product.price}</p>
-              <p className="text-gray-500 text-sm">{product.description}</p>
+              <h3 className="text-md font-semibold mt-4">{product.name}</h3>
+              <p className="text-gray-500 text-sm pt-2">{product.description}</p>
+              <div className='flex justify-between py-4 px-8'>
+                <p className="text-gray-600 flex flex-row items-center text-sm"><TbCurrencyNaira className="text-lg"/>{product.price}</p>
+                <button className='bg-sky-500 hover:bg-sky-600 px-2 rounded-lg text-white text-xs'>Add to cart</button>
+              </div>
+              
+              
             </Link>
           ))}
         </div>

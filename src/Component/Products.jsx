@@ -8,7 +8,7 @@ const Products = () => {
     <main className="bg-white">
       <section className="pt-20">
         <h2 className="text-4xl font-bold text-orange-500 text-center">ALL PRODUCTS</h2>
-        <div className="grid grid-cols-3 gap-4 text-center mt-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 text-center mt-10">
           {products.map((product) => (
             <Link to={`/product/${product.id}`} key={product.id} className="border p-4 rounded-lg shadow-lg">
               <img src={product.image} alt={product.name} className="w-full h-40 object-cover rounded-lg" />

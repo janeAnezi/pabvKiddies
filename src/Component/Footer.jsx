@@ -2,6 +2,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { SlSocialInstagram } from "react-icons/sl";
 import { FaXTwitter } from "react-icons/fa6";
 import { BsWhatsapp } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -17,11 +18,11 @@ const Footer = () => {
             <div>
               <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
               <ul className="text-sm text-gray-400 space-y-2">
-                <li><a href="/" className="hover:text-orange-500">Home</a></li>
-                <li><a href="/product" className="hover:text-orange-500">Products</a></li>
-                <li><a href="/services" className="hover:text-orange-500">Services</a></li>
-                <li><a href="/about" className="hover:text-orange-500">About Us</a></li>
-                <li><a href="/contact" className="hover:text-orange-500">Contact</a></li>
+                <li><Link to="/" className="hover:text-orange-500">Home</Link></li>
+                <li><Link to="/products" className="hover:text-orange-500">Products</Link></li>
+                <li><Link to="/services" className="hover:text-orange-500">Services</Link></li>
+                <li><Link to="/about" className="hover:text-orange-500">About Us</Link></li>
+                <li><Link to="/contact" className="hover:text-orange-500">Contact</Link></li>
               </ul>
             </div>
             <div>

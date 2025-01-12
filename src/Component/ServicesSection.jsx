@@ -13,7 +13,7 @@ const ServicesSection = () => {
             breakpoints={
                 {
                     340: {
-                        slidesPerView: 2,
+                        slidesPerView: 3,
                         spaceBetween: 15
                     },
                     700: {
@@ -27,7 +27,7 @@ const ServicesSection = () => {
                 clickable: true
             }}
             modules={[FreeMode, Pagination]}
-            className='max-w-[90%] lg:max-w-[80%]'
+            className='max-w-[80%] lg:max-w-[80%]'
         >
             {services.map((item)=>(
                 <SwiperSlide key={item.id}>
@@ -37,7 +37,7 @@ const ServicesSection = () => {
                         <div className='relative flex flex-col gap-3'>
                             <h1 className='text-xl lg:text-2xl mt-20 text-sky-500 font-bold'>{item.title}</h1>
                             <p className='text-sm lg:text-lg mb-20'>{item.description}</p>
-                            <FaLongArrowAltRight className='absolute -bottom-14 left-5 w-[35px] h-[35px] text-white group-hover:text-sky-500 -rotate-45 group-hover:rotate-[2deg] duration-100'/>
+                            <FaLongArrowAltRight className='absolute -bottom-8 left-5 w-[35px] h-[35px] text-white group-hover:text-sky-500 -rotate-45 group-hover:rotate-[2deg] duration-100'/>
                         </div>
                     </div>
                 </SwiperSlide>

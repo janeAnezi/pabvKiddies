@@ -1,10 +1,12 @@
 import { useEffect } from "react";
 import { slides, products, services } from "./content";
 import Carousel from "../Component/Carousel";
+import ServicesSection from "./ServicesSection";
 import { TbCurrencyNaira } from "react-icons/tb";
 import { Link } from "react-router-dom";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+
 
 
 const Home = () => {
@@ -73,40 +75,8 @@ const Home = () => {
                 </Link>
             </div>
         </section>
-
         {/* Services section */}
-        <section className="bg-gray-100 py-20">
-            <div className="max-w-7xl mx-auto px-4">
-                <h2 data-aos="fade-down"
-                    data-aos-easing="linear"
-                    data-aos-duration="1500" 
-                    className="text-center text-3xl font-bold text-orange-400 mb-8">
-                Our Services
-                </h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                {services.map((service) => (
-                    <div 
-                        data-aos="fade-up-left"
-                        key={service.id}
-                        className="bg-white shadow-lg rounded-lg overflow-hidden"
-                    >
-                    <img
-                        src={service.image}
-                        alt={service.title}
-                        className="w-full h-40 object-cover"
-                    />
-                    <div className="p-6">
-                        <h3 className="text-lg font-semibold text-gray-800 mb-2">
-                        {service.title}
-                        </h3>
-                        <p className="text-gray-600 text-sm">{service.description}</p>
-                    </div>
-                    </div>
-                ))}
-                </div>
-            </div>
-        </section>
-
+        <ServicesSection/>
         {/* About section */}
         <section className="bg-orange-50 py-16 px-4 ">
             <div data-aos="fade-up-left" className="max-w-5xl mx-auto text-center w-[60%]">

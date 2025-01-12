@@ -30,8 +30,9 @@ const ServicesSection = () => {
         >
             {services.map((item)=>(
                 <SwiperSlide key={item.id}>
-                    <div className='flex flex-col gap-6 group relative shadow-xl text-white rounded-xl px-6 py-8 h-[250px] w-[215px] lg:h-[400px] lg:w-[350px]'>
-
+                    <div className='flex flex-col group relative shadow-xl text-white cursor-pointer px-6 py-8 h-[250px] w-[215px] lg:h-[400px] lg:w-[350px]'>
+                        <div className='absolute inset-0 bg-cover bg-center rounded-lg' style={{backgroundImage: `url(${item.image})`}} />
+                        <div className='absolute inset-0 bg-black opacity-10 group-hover:opacity-50 rounded-lg' />
                     </div>
                 </SwiperSlide>
             ))}

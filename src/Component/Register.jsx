@@ -1,11 +1,18 @@
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
+import axios from 'axios';
 
 const Register = () => {
   const [formData, setFormData] = useState({
     name: '',
-    
+    email: '',
+    password: '',
+    error: ''
   })
+  const handleChange = (e) => {
+    const [name, value] = e.target;
+    setFormData((prev)=>({...prev, [name]: value}))
+  }
   const navigate = useNavigate();
 
   const handleSignIn = () => {
@@ -14,6 +21,9 @@ const Register = () => {
 
   const handleRegister = (e) => {
     e.preventDefault();
+    axios.post('', {name, email, password})
+    .then(result => console.log(result))
+    .catch(err => console.log(err))
     console.log('Registration submitted');
   };
 
@@ -29,6 +39,10 @@ const Register = () => {
               className="w-full border px-4 py-2 rounded"
               placeholder="Enter your name"
               required
+              id='name'
+              name='name'
+              autoComplete='off'
+              onChange={handleChange}
             />
           </div>
           <div className="mb-4">
@@ -38,6 +52,10 @@ const Register = () => {
               className="w-full border px-4 py-2 rounded"
               placeholder="Enter your email"
               required
+              id='email'
+              name='email'
+              onChange={handleChange}
+              autoComplete='off'
             />
           </div>
           <div className="mb-4">
@@ -47,6 +65,10 @@ const Register = () => {
               className="w-full border px-4 py-2 rounded"
               placeholder="Enter your password"
               required
+              id='password'
+              name='password'
+              onChange={handleChange}
+              autoComplete='off'
             />
           </div>
           <button

@@ -60,8 +60,8 @@ const ProductDetail = () => {
           </div>
           <div> 
             <h2 className="text-3xl font-bold mt-6">{product.name}</h2>
-            <p className="text-xl text-gray-700 mt-4">Price per item: ${product.price.toFixed(2)}</p>
-            <p className="text-xl font-semibold text-gray-800 mt-2">Total Price: ${totalPrice}</p>
+            <p className="text-xl text-gray-700 mt-4">Price per item: ₦{product.price.toFixed(2)}</p>
+            <p className="text-xl font-semibold text-gray-800 mt-2">Total Price: ₦{totalPrice}</p>
             <p className="text-gray-600 mt-2 leading-relaxed">{product.description}</p>
           </div>
           

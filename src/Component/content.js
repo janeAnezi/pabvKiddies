@@ -75,7 +75,7 @@ export const products = [
       name: 'Classic Ankara gown',
       price: 8000,
       image: kid2,
-      description: 'A chic and comfortable Ankara jumpsuit ideal for playful days.'
+      description: 'A chic and comfortable Ankara gown ideal for playful days.'
   },
   {
       id: '3',

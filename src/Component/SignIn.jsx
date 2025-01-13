@@ -1,6 +1,17 @@
 import { useNavigate } from 'react-router-dom';
+import { useState } from 'react';
 
 const SignIn = () => {
+  const [formData, setFormData] = useState({
+    email: '',
+    password: '',
+    error: ''
+  })
+
+  const handleChange = (e) => {
+    const {name, value} = e.target;
+    setFormData((prev) => ({...prev, [name]: value}))
+  }
   const navigate = useNavigate();
 
   const handleRegister = () => {
@@ -13,7 +24,7 @@ const SignIn = () => {
 
   return (
     <main className="bg-white">
-      <div className="max-w-md mx-auto py-20">
+      <div className="max-w-md mx-auto pt-20 px-10">
         <h2 className="text-center text-2xl font-semibold">Sign In</h2>
         <form className="mt-6">
           <div className="mb-4">
@@ -22,6 +33,11 @@ const SignIn = () => {
               type="email"
               className="w-full border px-4 py-2 rounded"
               placeholder="Enter your email"
+              id='email'
+              name='email'
+              autoComplete='off'
+              required
+              oncChange={handleChange}
             />
           </div>
           <div className="mb-4">
@@ -30,6 +46,11 @@ const SignIn = () => {
               type="password"
               className="w-full border px-4 py-2 rounded"
               placeholder="Enter your password"
+              id='password'
+              name='password'
+              autoComplete='off'
+              required
+              oncChange={handleChange}
             />
           </div>
           <button

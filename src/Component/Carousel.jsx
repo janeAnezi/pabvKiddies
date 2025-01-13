@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 
-const Carousel = ({ children: slides, autoSlide = false, autoSlideInterval = 3000 }) => {
+const Carousel = ({ children: slides, autoSlide = false, autoSlideInterval = 5000 }) => {
   const [currSlide, setCurrSlide] = useState(0);
 
   const next = () => {

@@ -22,10 +22,15 @@ const Register = () => {
   const { name, email, password } = formData;
   const handleRegister = (e) => {
     e.preventDefault();
-    axios.post('http://localhost:3001/register', {name, email, password})
-    .then(result => console.log(result))
-    .catch(err => console.log(err))
-    console.log('Registration submitted');
+    console.log({ name, email, password });
+    axios.post('http://localhost:3001/register', { name, email, password })
+        .then(result => {
+            console.log(result);
+            navigate('/login');
+        })
+        .catch(err => {
+            console.error(err.response.data);
+        });
   };
 
   return (

@@ -30,7 +30,7 @@ const SignIn = () => {
     axios.post('http://localhost:3001/login',{email, password})
     .then(result => {console.log(result)
         if(result.data === "Success") {
-            navigate('/home')
+            navigate('/products')
         } 
     })
     .catch(err => console.log(err))

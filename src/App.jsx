@@ -1,9 +1,9 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import LayOut from './Component/LayOut';
 import Home from './Component/Home';
 import Products from './Component/Products';
 import Services from './Component/Services';
-import LogIn from './Component/SignIn';
+import SignIn from './Component/SignIn';
 import Register from './Component/Register';
 import About from './Component/About';
 import Contact from './Component/Contact';
@@ -17,6 +17,7 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<LayOut />}>
+          <Route path="/" element={<Navigate to="/home" />} />
           <Route index element={<Home />} />
           <Route path="products" element={<Products />} />
           <Route path="/product/:id" element={<ProductDetail />} />
@@ -26,7 +27,7 @@ const App = () => {
           <Route path="payment" element={<Payment />} />
         </Route>
 
-        <Route path="/login" element={<LogIn />} />
+        <Route path="/login" element={<SignIn />} />
         <Route path="/register" element={<Register />} />
       </Routes>
     </BrowserRouter>

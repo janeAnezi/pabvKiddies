@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
+import axios from 'axios';
 
 const SignIn = () => {
   const [formData, setFormData] = useState({
@@ -22,11 +23,24 @@ const SignIn = () => {
     navigate('/forgot-password'); 
   };
 
+  const handleSignIn = (e) => {
+    e.preventDefault();
+    const { email, password } = formData;
+
+    axios.post('http://localhost:3001/login',{email, password})
+    .then(result => {console.log(result)
+        if(result.data === "Success") {
+            navigate('/home')
+        } 
+    })
+    .catch(err => console.log(err))
+  }
+
   return (
     <main className="bg-white">
       <div className="max-w-md mx-auto pt-20 px-10">
         <h2 className="text-center text-2xl font-semibold">Sign In</h2>
-        <form className="mt-6">
+        <form className="mt-6" onSubmit={handleSignIn}>
           <div className="mb-4">
             <label className="block text-gray-600">Email</label>
             <input
@@ -37,7 +51,7 @@ const SignIn = () => {
               name='email'
               autoComplete='off'
               required
-              oncChange={handleChange}
+              onChange={handleChange}
             />
           </div>
           <div className="mb-4">
@@ -50,11 +64,11 @@ const SignIn = () => {
               name='password'
               autoComplete='off'
               required
-              oncChange={handleChange}
+              onChange={handleChange}
             />
           </div>
           <button
-            type="button"
+            type="submit"
             className="w-full bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-700"
           >
             Sign In

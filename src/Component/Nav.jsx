@@ -7,6 +7,8 @@ import logo from '../assets/img/pabvlogo.png'
 
 const Nav = () => {
   const [isNavOpen, setIsNavOpen] = useState(false); 
+  const [isAuthenticated, setIsAuthenticated] = useState(true);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const toggleNavHandler = () => {
     setIsNavOpen(!isNavOpen); 
@@ -14,6 +16,15 @@ const Nav = () => {
 
   const closeNavHandler = () => {
     setIsNavOpen(false); 
+  };
+
+  const toggleDropdownHandler = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
+
+  const logoutHandler = () => {
+    setIsAuthenticated(false);
+    setIsDropdownOpen(false);
   };
 
   return (

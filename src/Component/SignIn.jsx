@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import axios from 'axios';
-import { useAuth } from '../Component/AuthContext';
+import { useAuth } from './AuthContext';
 
 const SignIn = () => {
   const [formData, setFormData] = useState({

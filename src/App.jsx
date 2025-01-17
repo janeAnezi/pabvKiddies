@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import { AuthProvider } from './AuthContext';
+import { AuthProvider } from './Component/AuthContext';
 import LayOut from './Component/LayOut';
 import Home from './Component/Home';
 import Products from './Component/Products';

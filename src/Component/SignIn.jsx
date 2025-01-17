@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import axios from 'axios';
+import { useAuth } from '../Component/AuthContext';
 
 const SignIn = () => {
   const [formData, setFormData] = useState({
@@ -13,6 +14,7 @@ const SignIn = () => {
     const {name, value} = e.target;
     setFormData((prev) => ({...prev, [name]: value}))
   }
+  const { setIsAuthenticated, setUser } = useAuth();
   const navigate = useNavigate();
 
   const handleRegister = () => {
@@ -30,7 +32,9 @@ const SignIn = () => {
     axios.post('http://localhost:3001/login',{email, password})
     .then(result => {console.log(result)
         if(result.data === "Success") {
-            navigate('/products')
+          setIsAuthenticated(true); 
+          setUser({ email });
+          navigate('/products')
         } 
     })
     .catch(err => console.log(err))

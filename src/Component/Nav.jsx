@@ -4,10 +4,11 @@ import { IoPulseSharp } from 'react-icons/io5';
 import { FaBarsStaggered } from 'react-icons/fa6';
 import { AiOutlineClose, AiOutlineUser } from 'react-icons/ai';
 import logo from '../assets/img/pabvlogo.png';
+import { useAuth } from '../AuthContext';
 
 const Nav = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
-  const [isAuthenticated, setIsAuthenticated] = useState(true); // Mock authentication state
+  const [isAuthenticated, setIsAuthenticated] = useState(false); 
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const toggleNavHandler = () => {

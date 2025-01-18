@@ -64,145 +64,185 @@ export const slides = [
 // ############## PRODUCTS
 export const products = [
   {
-      id: '1',
-      name: 'Beautiful Ankara Gown',
-      price: 7000,
-      image: kid1,
-      description: 'A nicely tailored Ankara gown with vibrant patterns perfect for any occasion.'
+    id: '1',
+    name: 'Beautiful Ankara Gown',
+    category: 'gown',
+    ageRange: '6-8',
+    price: 7000,
+    image: kid1,
+    description: 'A nicely tailored Ankara gown with vibrant patterns perfect for any occasion.'
   },
   {
-      id: '2',
-      name: 'Classic Ankara gown',
-      price: 8000,
-      image: kid2,
-      description: 'A chic and comfortable Ankara gown ideal for playful days.'
+    id: '2',
+    name: 'Classic Ankara Gown',
+    category: 'gown',
+    ageRange: '3-5',
+    price: 8000,
+    image: kid2,
+    description: 'A chic and comfortable Ankara gown ideal for playful days.'
   },
   {
-      id: '3',
-      name: 'Elegant Ankara Party Dress',
-      price: 9500,
-      image: kid3,
-      description: 'A stunning Ankara party dress with a touch of elegance for special events.'
+    id: '3',
+    name: 'Elegant Ankara Party Dress',
+    category: 'party dress',
+    ageRange: '9-12',
+    price: 9500,
+    image: kid3,
+    description: 'A stunning Ankara party dress with a touch of elegance for special events.'
   },
   {
-      id: '4',
-      name: 'Trendy Ankara Shorts',
-      price: 6000,
-      image: kid4,
-      description: 'A cool Ankara shirt paired with matching shorts for casual outings.'
+    id: '4',
+    name: 'Trendy Ankara Shorts',
+    category: 'shorts',
+    ageRange: '6-8',
+    price: 6000,
+    image: kid4,
+    description: 'A cool Ankara shirt paired with matching shorts for casual outings.'
   },
   {
-      id: '5',
-      name: 'Floral Ankara Baby shorts',
-      price: 5000,
-      image: kid5,
-      description: 'A soft and adorable Ankara baby dress featuring floral patterns.'
+    id: '5',
+    name: 'Floral Ankara Baby Shorts',
+    category: 'shorts',
+    ageRange: '0-2',
+    price: 5000,
+    image: kid5,
+    description: 'A soft and adorable Ankara baby dress featuring floral patterns.'
   },
   {
-      id: '6',
-      name: 'Vibrant Ankara Skater Dress',
-      price: 7000,
-      image: kid6,
-      description: 'A lively skater dress in Ankara print, perfect for twirling and fun.'
+    id: '6',
+    name: 'Vibrant Ankara Skater Dress',
+    category: 'skater dress',
+    ageRange: '9-12',
+    price: 7000,
+    image: kid6,
+    description: 'A lively skater dress in Ankara print, perfect for twirling and fun.'
   },
   {
-      id: '7',
-      name: 'Ankara Gentleman Set',
-      price: 8500,
-      image: kid7,
-      description: 'A classic Ankara outfit for boys, featuring a stylish shirt and pants.'
+    id: '7',
+    name: 'Ankara Gentleman Set',
+    category: 'two-piece',
+    ageRange: '6-8',
+    price: 8500,
+    image: kid7,
+    description: 'A classic Ankara outfit for boys, featuring a stylish shirt and pants.'
   },
   {
-      id: '8',
-      name: 'Casual Ankara Tunic Dress',
-      price: 6500,
-      image: kid8,
-      description: 'A simple yet fashionable tunic dress made with quality Ankara fabric.'
+    id: '8',
+    name: 'Casual Ankara Tunic Dress',
+    category: 'tunic dress',
+    ageRange: '3-5',
+    price: 6500,
+    image: kid8,
+    description: 'A simple yet fashionable tunic dress made with quality Ankara fabric.'
   },
   {
-      id: '9',
-      name: 'Modern Ankara Maxi Gown',
-      price: 9000,
-      image: kid9,
-      description: 'A long flowing Ankara gown with a modern touch for formal occasions.'
+    id: '9',
+    name: 'Modern Ankara Maxi Gown',
+    category: 'gown',
+    ageRange: '9-12',
+    price: 9000,
+    image: kid9,
+    description: 'A long flowing Ankara gown with a modern touch for formal occasions.'
   },
   {
-      id: '10',
-      name: 'Adorable Ankara Playsuit',
-      price: 7500,
-      image: kid10,
-      description: 'A playful Ankara playsuit designed for comfort and style.'
+    id: '10',
+    name: 'Adorable Ankara Playsuit',
+    category: 'playsuit',
+    ageRange: '6-8',
+    price: 7500,
+    image: kid10,
+    description: 'A playful Ankara playsuit designed for comfort and style.'
   },
   {
-      id: '11',
-      name: 'Colorful Ankara Wrap Dress',
-      price: 8500,
-      image: kid11,
-      description: 'A wrap-style Ankara dress with vibrant colors and a unique fit.'
+    id: '11',
+    name: 'Colorful Ankara Wrap Dress',
+    category: 'wrap dress',
+    ageRange: '3-5',
+    price: 8500,
+    image: kid11,
+    description: 'A wrap-style Ankara dress with vibrant colors and a unique fit.'
   },
   {
-      id: '12',
-      name: 'Bold Ankara Two-Piece Set',
-      price: 8000,
-      image: kid12,
-      description: 'A fashionable two-piece set with striking Ankara patterns.'
+    id: '12',
+    name: 'Bold Ankara Two-Piece Set',
+    category: 'two-piece',
+    ageRange: '6-8',
+    price: 8000,
+    image: kid12,
+    description: 'A fashionable two-piece set with striking Ankara patterns.'
   },
   {
-      id: '13',
-      name: 'Lovely Ankara High-Low Dress',
-      price: 9500,
-      image: kid13,
-      description: 'A trendy high-low dress that combines elegance with traditional flair.'
+    id: '13',
+    name: 'Lovely Ankara High-Low Dress',
+    category: 'high-low dress',
+    ageRange: '9-12',
+    price: 9500,
+    image: kid13,
+    description: 'A trendy high-low dress that combines elegance with traditional flair.'
   },
   {
-      id: '14',
-      name: 'Fun Ankara Romper',
-      price: 7000,
-      image: kid14,
-      description: 'A cute and fun Ankara romper for active kids on the go.'
+    id: '14',
+    name: 'Fun Ankara Romper',
+    category: 'romper',
+    ageRange: '0-2',
+    price: 7000,
+    image: kid14,
+    description: 'A cute and fun Ankara romper for active kids on the go.'
   },
   {
-      id: '15',
-      name: 'Ankara Princess Gown',
-      price: 12000,
-      image: kid15,
-      description: 'A majestic ball gown with intricate Ankara designs for your little princess.'
+    id: '15',
+    name: 'Ankara Princess Gown',
+    category: 'gown',
+    ageRange: '9-12',
+    price: 12000,
+    image: kid15,
+    description: 'A majestic ball gown with intricate Ankara designs for your little princess.'
   },
   {
-      id: '16',
-      name: 'Chic Ankara Peplum Top',
-      price: 6000,
-      image: kid16,
-      description: 'A stylish Ankara peplum top paired with a matching skirt.'
+    id: '16',
+    name: 'Chic Ankara Peplum Top',
+    category: 'peplum top',
+    ageRange: '6-8',
+    price: 6000,
+    image: kid16,
+    description: 'A stylish Ankara peplum top paired with a matching skirt.'
   },
   {
-      id: '17',
-      name: 'Playful Ankara Dungarees',
-      price: 7500,
-      image: kid17,
-      description: 'Trendy Ankara dungarees perfect for casual outings and playtime.'
+    id: '17',
+    name: 'Playful Ankara Dungarees',
+    category: 'dungarees',
+    ageRange: '3-5',
+    price: 7500,
+    image: kid17,
+    description: 'Trendy Ankara dungarees perfect for casual outings and playtime.'
   },
   {
-      id: '18',
-      name: 'Cute Ankara Ruffled Dress',
-      price: 8500,
-      image: kid18,
-      description: 'A charming Ankara dress with ruffled details for a playful look.'
+    id: '18',
+    name: 'Cute Ankara Ruffled Dress',
+    category: 'ruffled dress',
+    ageRange: '3-5',
+    price: 8500,
+    image: kid18,
+    description: 'A charming Ankara dress with ruffled details for a playful look.'
   },
   {
-      id: '19',
-      name: 'Stylish Ankara',
-      price: 9000,
-      image: kid19,
-      description: 'An Ankara jacket to keep your kids warm while looking trendy.'
+    id: '19',
+    name: 'Stylish Ankara Jacket',
+    category: 'jacket',
+    ageRange: '9-12',
+    price: 9000,
+    image: kid19,
+    description: 'An Ankara jacket to keep your kids warm while looking trendy.'
   },
   {
-      id: '20',
-      name: 'Elegant Ankara A-Line Dress',
-      price: 8500,
-      image: kid20,
-      description: 'A simple yet classy A-line dress with unique Ankara patterns.'
-  },
+    id: '20',
+    name: 'Elegant Ankara A-Line Dress',
+    category: 'a-line dress',
+    ageRange: '6-8',
+    price: 8500,
+    image: kid20,
+    description: 'A simple yet classy A-line dress with unique Ankara patterns.'
+  },  
   {
       id: '21',
       name: 'Casual Ankara Shirt',

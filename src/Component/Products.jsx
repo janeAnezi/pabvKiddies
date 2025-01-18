@@ -15,11 +15,15 @@ const Products = () => {
               placeholder="Search by category (e.g., gown)"
               className="border px-4 py-2 rounded-lg w-1/4"
             />
-            <input
-              type="text"
-              placeholder="Search by keyword (e.g., red)"
+            <select
               className="border px-4 py-2 rounded-lg w-1/4"
-            />
+            >
+              <option value="">Select age range</option>
+              <option value="0-2">0-2 years</option>
+              <option value="3-5">3-5 years</option>
+              <option value="6-8">6-8 years</option>
+              <option value="9-12">9-12 years</option>
+            </select>
             <button
               type="submit"
               className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-lg"

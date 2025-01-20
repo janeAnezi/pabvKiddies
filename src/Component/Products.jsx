@@ -5,9 +5,12 @@ import { TbCurrencyNaira } from "react-icons/tb";
 import { FaShoppingCart } from "react-icons/fa";
 
 const Products = () => {
-  const [category, setCategory] = useState(""); 
+  const [category, setCategory] = useState("");
   const [ageRange, setAgeRange] = useState("");
-  const [filteredProducts, setFilteredProducts] = useState(products);
+  const [products, setProducts] = useState([]);
+  const [filteredProducts, setFilteredProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   const handleSearch = (e) => {
     e.preventDefault();

@@ -1,28 +1,13 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import axios from 'axios';
-import { TbCurrencyNaira } from 'react-icons/tb';
-import { FaShoppingCart } from 'react-icons/fa';
+import { products } from './content';
+import { TbCurrencyNaira } from "react-icons/tb";
+import { FaShoppingCart } from "react-icons/fa";
 
 const Products = () => {
-  const [products, setProducts] = useState([]);
-  const [filteredProducts, setFilteredProducts] = useState([]);
-  const [category, setCategory] = useState('');
-  const [ageRange, setAgeRange] = useState('');
-
-  useEffect(() => {
-    const fetchProducts = async () => {
-      try {
-        const response = await axios.get('http://localhost:3001/api/products');
-        setProducts(response.data);
-        setFilteredProducts(response.data); 
-      } catch (err) {
-        console.error('Error fetching products:', err);
-      }
-    };
-
-    fetchProducts();
-  }, []);
+  const [category, setCategory] = useState(""); 
+  const [ageRange, setAgeRange] = useState("");
+  const [filteredProducts, setFilteredProducts] = useState(products);
 
   const handleSearch = (e) => {
     e.preventDefault();
@@ -32,9 +17,30 @@ const Products = () => {
       return categoryMatch && ageRangeMatch;
     });
     setFilteredProducts(results);
-    setCategory('');
-    setAgeRange('');
+    setAgeRange("")
+    setCategory("")
   };
+  
+  useEffect(() => {
+    fetch('http://localhost:5000/api/products')
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Failed to fetch products");
+        }
+        return response.json();
+      })
+      .then((data) => {
+        setProducts(data);
+        setFilteredProducts(data);
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.error('Error fetching products:', err);
+        setError(err.message);
+        setLoading(false);
+      });
+  }, []);
+
 
   return (
     <main className="bg-white">
@@ -96,8 +102,23 @@ const Products = () => {
               </Link>
             ))
           ) : (
-            <p className="col-span-3 text-gray-500">No products available</p>
+            <p className="col-span-3 text-gray-500">View Available Products</p>
+
           )}
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 text-center mt-10">
+          {products.map((product) => (
+            <Link to={`/product/${product.id}`} key={product.id} className="border p-4 rounded-lg shadow-lg">
+              <img src={product.image} alt={product.name} className="w-full h-40 object-cover rounded-lg" />
+              <h3 className="text-md font-semibold mt-4">{product.name}</h3>
+              <p className="text-gray-500 text-xs pt-2">{product.description}</p>
+              <div className='flex justify-between pt-4 px-8'>
+                <p className="text-gray-600 flex flex-row items-center text-sm"><TbCurrencyNaira className="text-lg"/>{product.price}</p>
+                <button className='flex flex-row items-center gap-1.5 bg-sky-500 hover:bg-sky-600 px-2 rounded-lg text-white text-xs'><FaShoppingCart /> Add to cart</button>
+              </div>
+            </Link>
+          ))}
         </div>
       </section>
     </main>

@@ -1,13 +1,28 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { products } from './content';
-import { TbCurrencyNaira } from "react-icons/tb";
-import { FaShoppingCart } from "react-icons/fa";
+import axios from 'axios';
+import { TbCurrencyNaira } from 'react-icons/tb';
+import { FaShoppingCart } from 'react-icons/fa';
 
 const Products = () => {
-  const [category, setCategory] = useState(""); 
-  const [ageRange, setAgeRange] = useState("");
-  const [filteredProducts, setFilteredProducts] = useState(products);
+  const [products, setProducts] = useState([]);
+  const [filteredProducts, setFilteredProducts] = useState([]);
+  const [category, setCategory] = useState('');
+  const [ageRange, setAgeRange] = useState('');
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        const response = await axios.get('http://localhost:3001/api/products');
+        setProducts(response.data);
+        setFilteredProducts(response.data); 
+      } catch (err) {
+        console.error('Error fetching products:', err);
+      }
+    };
+
+    fetchProducts();
+  }, []);
 
   const handleSearch = (e) => {
     e.preventDefault();
@@ -17,10 +32,9 @@ const Products = () => {
       return categoryMatch && ageRangeMatch;
     });
     setFilteredProducts(results);
-    setAgeRange("")
-    setCategory("")
+    setCategory('');
+    setAgeRange('');
   };
-  
 
   return (
     <main className="bg-white">
@@ -82,22 +96,8 @@ const Products = () => {
               </Link>
             ))
           ) : (
-            <p className="col-span-3 text-gray-500">View Available Products</p>
+            <p className="col-span-3 text-gray-500">No products available</p>
           )}
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 text-center mt-10">
-          {products.map((product) => (
-            <Link to={`/product/${product.id}`} key={product.id} className="border p-4 rounded-lg shadow-lg">
-              <img src={product.image} alt={product.name} className="w-full h-40 object-cover rounded-lg" />
-              <h3 className="text-md font-semibold mt-4">{product.name}</h3>
-              <p className="text-gray-500 text-xs pt-2">{product.description}</p>
-              <div className='flex justify-between pt-4 px-8'>
-                <p className="text-gray-600 flex flex-row items-center text-sm"><TbCurrencyNaira className="text-lg"/>{product.price}</p>
-                <button className='flex flex-row items-center gap-1.5 bg-sky-500 hover:bg-sky-600 px-2 rounded-lg text-white text-xs'><FaShoppingCart /> Add to cart</button>
-              </div>
-            </Link>
-          ))}
         </div>
       </section>
     </main>

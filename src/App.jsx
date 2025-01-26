@@ -9,6 +9,7 @@ import Register from './Component/Register';
 import About from './Component/About';
 import Contact from './Component/Contact';
 import ProductDetail from './Component/ProductDetail';
+import Cart from './Component/Cart';
 
 import './App.css'
 import Payment from './Component/Payment';
@@ -21,7 +22,9 @@ const App = () => {
           <Route path="/" element={<LayOut />}>
             <Route path="/" element={<Navigate to="/products" />} />
             <Route index element={<Home />} />
+            
             <Route path="products" element={<Products />} />
+            <Route path="cart" element={<Cart />} />
             <Route path="/product/:id" element={<ProductDetail />} />
             <Route path="services" element={<Services />} />
             <Route path="about" element={<About />} />

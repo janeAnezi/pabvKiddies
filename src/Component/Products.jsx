@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { products } from './content';
 import { TbCurrencyNaira } from "react-icons/tb";
 import { FaShoppingCart } from "react-icons/fa";
+import { useCart } from 'react-use-cart';
 
 const Products = () => {
   const [category, setCategory] = useState("");
@@ -10,6 +11,7 @@ const Products = () => {
   const [filteredProducts, setFilteredProducts] = useState([]);
   // const [loading, setLoading] = useState(true);
   // const [error, setError] = useState(null);
+  const { addItem} = useCart()
 
   const handleSearch = (e) => {
     e.preventDefault();
@@ -76,7 +78,7 @@ const Products = () => {
                     <TbCurrencyNaira className="text-lg" />
                     {product.price}
                   </p>
-                  <button className="flex flex-row items-center gap-1.5 bg-sky-500 hover:bg-sky-600 px-2 rounded-lg text-white text-xs">
+                  <button onClick={() => addItem(props.product)} className="flex flex-row items-center gap-1.5 bg-sky-500 hover:bg-sky-600 px-2 rounded-lg text-white text-xs">
                     <FaShoppingCart /> Add to cart
                   </button>
                 </div>

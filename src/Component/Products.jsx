@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { products } from './content';
 import { TbCurrencyNaira } from "react-icons/tb";
@@ -7,10 +7,9 @@ import { FaShoppingCart } from "react-icons/fa";
 const Products = () => {
   const [category, setCategory] = useState("");
   const [ageRange, setAgeRange] = useState("");
-  const [products, setProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  // const [loading, setLoading] = useState(true);
+  // const [error, setError] = useState(null);
 
   const handleSearch = (e) => {
     e.preventDefault();
@@ -23,27 +22,6 @@ const Products = () => {
     setAgeRange("")
     setCategory("")
   };
-  
-  useEffect(() => {
-    fetch('http://localhost:5000/api/products')
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Failed to fetch products");
-        }
-        return response.json();
-      })
-      .then((data) => {
-        setProducts(data);
-        setFilteredProducts(data);
-        setLoading(false);
-      })
-      .catch((err) => {
-        console.error('Error fetching products:', err);
-        setError(err.message);
-        setLoading(false);
-      });
-  }, []);
-
 
   return (
     <main className="bg-white">
